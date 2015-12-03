@@ -215,3 +215,7 @@ header.navigation .navigation-tools {
   position: absolute;
   bottom: 0;
 }
+
+body {
+  background-color: red;
+}
