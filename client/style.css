@@ -1,0 +1,217 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+h1 {
+  color: #14213D;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+.content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#fires, #threats {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+}
+#fires:last-child, #threats:last-child {
+  margin-right: 0;
+}
+#fires h1, #threats h1 {
+  border-bottom: solid 1px #F69101;
+}
+@media screen and (max-width: 53.75em) {
+  #fires, #threats {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  #fires:last-child, #threats:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  #threats {
+    margin-left: 8.5298%;
+  }
+}
+
+header.navigation {
+  background-color: #14213D;
+  border-bottom: 1px solid #070c17;
+  min-height: 76px;
+  width: 100%;
+  z-index: 999;
+}
+header.navigation .navigation-wrapper {
+  max-width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 9999;
+}
+header.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+header.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+header.navigation .navigation-menu-button {
+  color: white;
+  display: block;
+  float: left;
+  line-height: 76px;
+  margin: 0;
+  padding-right: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 53.75em) {
+  header.navigation .navigation-menu-button {
+    display: none;
+  }
+}
+header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
+  color: #F69101;
+}
+header.navigation nav {
+  float: none;
+  min-height: 76px;
+  z-index: 9999999;
+}
+@media screen and (min-width: 53.75em) {
+  header.navigation nav {
+    float: left;
+  }
+}
+header.navigation ul.navigation-menu {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 9999;
+}
+header.navigation ul.navigation-menu.show {
+  display: block;
+}
+@media screen and (min-width: 53.75em) {
+  header.navigation ul.navigation-menu {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+header.navigation ul li.nav-link {
+  background: #14213D;
+  display: block;
+  line-height: 76px;
+  overflow: hidden;
+  padding-right: 0.8em;
+  text-align: left;
+  width: 100%;
+  z-index: 9999;
+}
+@media screen and (min-width: 53.75em) {
+  header.navigation ul li.nav-link {
+    background: transparent;
+    display: inline;
+    line-height: 76px;
+    text-decoration: none;
+    width: auto;
+  }
+}
+header.navigation ul li.nav-link a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 25.888px;
+}
+header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+  color: #F69101;
+}
+header.navigation .active-nav-item a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 3px;
+}
+header.navigation li.more.nav-link {
+  padding-right: 0;
+}
+@media screen and (min-width: 53.75em) {
+  header.navigation li.more.nav-link {
+    padding-right: 1em;
+  }
+}
+header.navigation li.more.nav-link > ul > li:first-child a {
+  padding-top: 1em;
+}
+header.navigation li.more.nav-link a {
+  margin-right: 1em;
+}
+header.navigation li.more.nav-link > a {
+  padding-right: 0.6em;
+}
+header.navigation li.more.nav-link > a:after {
+  position: absolute;
+  top: auto;
+  right: -0.4em;
+  bottom: auto;
+  left: auto;
+  content: '\25BE';
+  color: white;
+}
+header.navigation .navigation-tools {
+  background: #505050;
+  clear: both;
+  display: block;
+  height: 76px;
+}
+@media screen and (min-width: 53.75em) {
+  header.navigation .navigation-tools {
+    background: transparent;
+    clear: none;
+    float: right;
+  }
+}
+
+.footer-2 {
+  background: #F69101;
+  padding: 1.5em;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
