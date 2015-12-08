@@ -21,5 +21,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 orionjs:core
 iron:router
 email
-materialize:materialize
 orionjs:materialize
+fourseven:scss
+poetic:materialize-scss
