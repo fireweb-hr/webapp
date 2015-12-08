@@ -25,3 +25,5 @@ orionjs:materialize
 fourseven:scss
 poetic:materialize-scss
 dburles:google-maps
+gwendall:mobile-scroll
+fastclick

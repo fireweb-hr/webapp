@@ -155,8 +155,12 @@
         <item url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_roles/1.5.3/web.browser/roles_client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_roles/1.5.3/web.browser/roles.js" />
         <item url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_router-layer/0.0.11/web.browser/packages/nicolaslopezj_router-layer.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-ishomescreen/0.1.0/web.browser/packages/gwendall_mobile-ishomescreen.js" />
         <item url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_tabular-materialize/1.2.1/web.browser/packages/nicolaslopezj_tabular-materialize.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-ismobile/0.1.0/web.browser/packages/gwendall_mobile-ismobile.js" />
         <item url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_tabular-materialize/1.2.1/web.browser/packages/nicolaslopezj_tabular-materialize/client/lib/dataTables.materialize.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-scroll/0.1.0/web.browser/packages/gwendall_mobile-scroll.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-scroll/0.1.0/web.browser/packages/gwendall_mobile-scroll/lib.css" />
         <item url="file://$USER_HOME$/.meteor/packages/npm-bcrypt/0.7.8_2/web.browser/packages/npm-bcrypt.js" />
         <item url="file://$USER_HOME$/.meteor/packages/observe-sequence/1.0.7/web.browser/observe_sequence.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ordered-dict/1.0.4/web.browser/ordered_dict.js" />
@@ -417,8 +421,12 @@
       <root url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_roles/1.5.3/web.browser/roles_client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_roles/1.5.3/web.browser/roles.js" />
       <root url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_router-layer/0.0.11/web.browser/packages/nicolaslopezj_router-layer.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-ishomescreen/0.1.0/web.browser/packages/gwendall_mobile-ishomescreen.js" />
       <root url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_tabular-materialize/1.2.1/web.browser/packages/nicolaslopezj_tabular-materialize.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-ismobile/0.1.0/web.browser/packages/gwendall_mobile-ismobile.js" />
       <root url="file://$USER_HOME$/.meteor/packages/nicolaslopezj_tabular-materialize/1.2.1/web.browser/packages/nicolaslopezj_tabular-materialize/client/lib/dataTables.materialize.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-scroll/0.1.0/web.browser/packages/gwendall_mobile-scroll.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/gwendall_mobile-scroll/0.1.0/web.browser/packages/gwendall_mobile-scroll/lib.css" />
       <root url="file://$USER_HOME$/.meteor/packages/npm-bcrypt/0.7.8_2/web.browser/packages/npm-bcrypt.js" />
       <root url="file://$USER_HOME$/.meteor/packages/observe-sequence/1.0.7/web.browser/observe_sequence.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ordered-dict/1.0.4/web.browser/ordered_dict.js" />
