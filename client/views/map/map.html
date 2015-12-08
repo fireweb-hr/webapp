@@ -1,7 +1,12 @@
 <template name="map">
     <section>
         <div id="googleMap">
-            {{> googleMap name="dashboardMap" options=dashBoardMapOptions}}
+            {{> googleMap name="dashboardMap" options=dashboardMapOptions}}
+        </div>
+        <div id="nodeInfo">
+            <h1>
+                {{node}}
+            </h1>
         </div>
     </section>
 </template>
