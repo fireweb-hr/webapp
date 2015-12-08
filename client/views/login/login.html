@@ -1,28 +1,26 @@
 <template name="login">
-    <main class="container login">
-        <section class="row">
-            <div class="col s4 offset-s3 z-depth-2" id="loginContainer">
-                <h1 class="flow-text">Log in</h1>
-                <form autocomplete="off">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="email" type="email" name="loginEmail" class="validate">
-                            <label for="email">Email</label>
-                        </div>
+    <section class="row">
+        <div class="col s4 offset-s3 z-depth-2" id="loginContainer">
+            <h1 class="flow-text">Log in</h1>
+            <form autocomplete="off">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="email" type="email" name="loginEmail" class="validate">
+                        <label for="email">Email</label>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">vpn_key</i>
-                            <input id="password" type="password" name="loginPassword" class="validate">
-                            <label for="password">Password</label>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="password" type="password" name="loginPassword" class="validate">
+                        <label for="password">Password</label>
                     </div>
-                    <button class="btn waves-effect waves-light right" type="Log in" name="action">Submit
-                        <i class="material-icons right">send</i>
-                    </button>
-                </form>
-            </div>
-        </section>
-    </main>
+                </div>
+                <button class="btn waves-effect waves-light right" type="Log in" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </section>
 </template>

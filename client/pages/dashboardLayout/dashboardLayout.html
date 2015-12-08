@@ -1,4 +1,7 @@
 <template name="dashboardLayout">
     {{>header}}
-    {{>yield "map"}}
+        <main class="container offset-top">
+            {{>yield "map"}}
+            {{>yield "windSpd"}}
+        </main>
 </template>

@@ -1,12 +1,15 @@
 <template name="map">
-    <section>
-        <div id="googleMap">
+    <section class="row">
+        <div id="googleMap" class="col s12">
             {{> googleMap name="dashboardMap" options=dashboardMapOptions}}
         </div>
-        <div id="nodeInfo">
-            <h1>
-                {{node}}
-            </h1>
+        <div id="nodeInfo" class="col s12 z-depth-2">
+            <h2 class="flow-text">
+                Node information
+            </h2>
+            <p class="flow-text">
+                Node ID: <strong>{{node}}</strong>
+            </p>
         </div>
     </section>
 </template>
