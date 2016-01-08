@@ -16,7 +16,6 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 orionjs:core
 iron:router
@@ -27,3 +26,14 @@ poetic:materialize-scss
 dburles:google-maps
 gwendall:mobile-scroll
 fastclick
+http
+meteorhacks:npm
+
+
+npm-container
+meteorhacks:aggregate
+underscore
+maazalik:highcharts
+chart:chart
+momentjs:moment
+maazalik:highcharts-gauge

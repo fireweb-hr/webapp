@@ -1,0 +1,9 @@
+<template name="temperature">
+    <section class="row">
+        <div style="margin-bottom: 20px" class="panel col m12 s12 z-depth-2">
+            <h3>Temperature</h3>
+            <h4 class="flow-text">Current temperature: {{current}}</h4>
+            {{> highchartsHelper chartId="temperature" chartWidth="100%" charHeight="100%" chartObject=temperature}}
+        </div>
+    </section>
+</template>

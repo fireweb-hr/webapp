@@ -1,7 +1,10 @@
 <template name="dashboardLayout">
     {{>header}}
         <main class="container offset-top">
-            {{>yield "map"}}
-            {{>yield "windSpd"}}
+            {{>yield 'map'}}
+            <!-- {{>yield "windSpd"}} -->
+            {{>yield 'temperature'}}
+            {{>yield 'humidity'}}
+            {{>yield 'pressure'}}
         </main>
 </template>

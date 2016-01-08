@@ -1,15 +1,19 @@
 <template name="map">
     <section class="row">
-        <div id="googleMap" class="col s12">
-            {{> googleMap name="dashboardMap" options=dashboardMapOptions}}
-        </div>
-        <div id="nodeInfo" class="col s12 z-depth-2">
-            <h2 class="flow-text">
+        <div id="nodeInfo" style="margin-bottom: 20px;" class="panel col m12 s12 offset-m1 z-depth-2">
+            <h3>
                 Node information
-            </h2>
-            <p class="flow-text">
-                Node ID: <strong>{{node}}</strong>
-            </p>
+            </h3>
+            <h5 class="flow-text">
+                Node ID: <strong>{{node._id}}</strong>
+            </h5>
+            <ul>
+                <li><strong>Longitude: {{node.geo.lng}}</strong></li>
+                <li><strong>Latitude: {{node.geo.lat}}</strong></li>
+            </ul>
+        </div>
+        <div id="googleMap" class="col m12 s12">
+            {{> googleMap name="dashboardMap" options=dashboardMapOptions}}
         </div>
     </section>
 </template>

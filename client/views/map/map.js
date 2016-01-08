@@ -1,7 +1,7 @@
 Template.map.helpers({
     node: function () {
-        // Eventually get info from database.
-        return Session.get("selectedNode");
+        let nodes = Nodes.find({_id: Session.get('selectedNodeId')}).fetch()[0];
+        return nodes;
     },
     dashboardMapOptions: function () {
         if (GoogleMaps.loaded()) {
@@ -18,37 +18,27 @@ Template.map.onRendered(function () {
 });
 
 Template.map.onCreated(function () {
-    GoogleMaps.ready('dashboardMap', function(map) {
-        var that = this;
+    GoogleMaps.ready('dashboardMap', () => {
+        Session.set('selectedNodeId', "350027000a47343432313031");
+        let nodes = Nodes.find({});
+        let markers = [];
 
-        // Eventually get nodes from database with id and lat lng.
-        var markerOptions = [
-            new google.maps.Marker({
-                position: map.options.center,
+
+        nodes.forEach((value) => {
+            const geo = value.geo;
+            const id = value._id;
+            let options = new google.maps.Marker({
+                position: geo,
                 map: GoogleMaps.maps.dashboardMap.instance,
-                title: "I am a demo marker.",
-                id: 1
-            }),
-            new google.maps.Marker({
-                position: {lat: 52.7400, lng: 4.700},
-                map: GoogleMaps.maps.dashboardMap.instance,
-                title: "I am a demo marker.",
-                id: 2
-            })
-
-        ];
-
-        this.addMarker = function (options) {
-            var marker = options;
-            marker.addListener("click", function () {
-                Session.set("selectedNode", this.id);
+                title: '',
+                id: id
             });
-        };
 
-        _.each(markerOptions, function (marker) {
-            that.addMarker(marker);
+            options.addListener('click', () => {
+                Session.set('selectedNodeId', id);
+            });
+
+            markers.push(options);
         });
-
-        Session.set("selectedNode", 1);
     });
 });
