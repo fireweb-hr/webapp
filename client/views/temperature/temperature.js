@@ -1,34 +1,26 @@
 Template.temperature.helpers({
-    node() {
-        return Nodes.findOne(Session.get('selectedNodeId'));
-    },
-
     current() {
-        let node = Nodes.findOne(Session.get('selectedNodeId'));
-        let length = node.data.length - 1;
-        let current = node.data[length].temperature;
-        return current;
+        return SensorData.findOne({}, {sort: {outputTime: -1},
+            fields: {temperature: 1}, limit: 1});
     }
 });
 
-Template.temperature.temperature = () => {
-    let node = Nodes.findOne(Session.get('selectedNodeId'));
-    let temps = [];
-    let times = [];
-
-    node.data.forEach(v => {
-        var unix = v.outputTime;
-        temps.push(parseInt(v.temperature));
-        times.push(moment(unix).format('HH:mm:ss, DD MMM YY'));
-    });
-
+Template.temperature.temperature = function () {
+    let data = SensorData.find({}, {sort: {outputTime: -1}, fields: {temperature: 1, outputTime: 1}, limit: 25});
+    let temps = data.fetch().map((value) => {
+        return parseInt(value.temperature);
+    }).reverse();
+    let times = data.fetch().map((value) => {
+        const unix = value.outputTime;
+        return moment(unix).format('HH:mm:ss, DD MMM YY');
+    }).reverse();
 
     return {
         chart: {
             type: 'line'
         },
         title: {
-            text: 'Temperature'
+            text: ''
         },
         xAxis: {
             categories: times
@@ -47,8 +39,8 @@ Template.temperature.temperature = () => {
             }
         },
         series: [{
-            type: 'line',
-            name: 'Samson\'s tropische woonkamer',
+            name: `Node ID: ${Session.get('selectedNodeId')}`,
             data: temps
         }]
-}};
+    }
+};

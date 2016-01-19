@@ -1,7 +1,6 @@
 Template.map.helpers({
     node: function () {
-        let nodes = Nodes.find({_id: Session.get('selectedNodeId')}).fetch()[0];
-        return nodes;
+        return Nodes.findOne({_id: Session.get('selectedNodeId')});
     },
     dashboardMapOptions: function () {
         if (GoogleMaps.loaded()) {
@@ -13,25 +12,21 @@ Template.map.helpers({
     }
 });
 
-Template.map.onRendered(function () {
-    GoogleMaps.load();
-});
-
 Template.map.onCreated(function () {
+    this.subscribe('nodes');
+
     GoogleMaps.ready('dashboardMap', () => {
-        Session.set('selectedNodeId', "350027000a47343432313031");
         let nodes = Nodes.find({});
         let markers = [];
-
+        const i = 0;
+        const length = nodes.fetch().length - 1;
 
         nodes.forEach((value) => {
-            const geo = value.geo;
-            const id = value._id;
             let options = new google.maps.Marker({
-                position: geo,
+                position: value.geo,
                 map: GoogleMaps.maps.dashboardMap.instance,
                 title: '',
-                id: id
+                id: value._id
             });
 
             options.addListener('click', () => {
@@ -39,6 +34,15 @@ Template.map.onCreated(function () {
             });
 
             markers.push(options);
+
+            if (i === length) {
+                Session.set('selectedNodeId', value._id);
+            }
         });
     });
+});
+
+
+Template.map.onRendered(function () {
+    GoogleMaps.load();
 });

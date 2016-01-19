@@ -37,3 +37,5 @@ maazalik:highcharts
 chart:chart
 momentjs:moment
 maazalik:highcharts-gauge
+reactive-var
+simple:reactive-method
