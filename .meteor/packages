@@ -33,9 +33,11 @@ meteorhacks:npm
 npm-container
 meteorhacks:aggregate
 underscore
-maazalik:highcharts
 chart:chart
 momentjs:moment
 maazalik:highcharts-gauge
 reactive-var
 simple:reactive-method
+
+
+maazalik:highcharts

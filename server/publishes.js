@@ -7,5 +7,5 @@ Meteor.publish('currentData', (id) => {
 });
 
 Meteor.publish('dataList', (id) => {
-    return SensorData.find({nodeId: id}, {sort: {outputTime: -1}, limit: 25});
+    return SensorData.find({nodeId: id}, {sort: {outputTime: -1}, limit: 240});
 });

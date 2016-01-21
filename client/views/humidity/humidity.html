@@ -1,7 +1,7 @@
 <template name="humidity">
-     <div style="margin-bottom: 20px;" class="panel col m12 s12 z-depth-2">
-        <h3>Humidity</h3>
-        <h4 class="flow-text">Current humidity: {{current.humidity}}</h4>
-        <!-- {{> highchartsHelper chartId="humidity" chartWidth="100%" charHeight="100%" chartObject=humidity}} -->
+     <div style="margin-bottom: 20px;" class="panel col l12 m12 s12 z-depth-1">
+        <h5>Humidity</h5>
+        <p>Current humidity: {{current.humidity}}</p>
+         {{> highchartsHelper chartId="humidity" chartWidth="100%" chartHeight="400px" chartObject=humidity}}
     </div>
 </template>

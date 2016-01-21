@@ -4,7 +4,6 @@ $primary-color: color("grey", "lighten-3");
 $secondary-color: color("amber", "darken-2");
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-// import main scss file
 
 @import "../client/views/map/map";
 @import "../client/views/login/login";

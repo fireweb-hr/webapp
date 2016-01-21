@@ -6,41 +6,65 @@ Template.temperature.helpers({
 });
 
 Template.temperature.temperature = function () {
-    let data = SensorData.find({}, {sort: {outputTime: -1}, fields: {temperature: 1, outputTime: 1}, limit: 25});
-    let temps = data.fetch().map((value) => {
-        return parseInt(value.temperature);
-    }).reverse();
-    let times = data.fetch().map((value) => {
-        const unix = value.outputTime;
-        return moment(unix).format('HH:mm:ss, DD MMM YY');
+    let data = SensorData.find({}, {sort: {outputTime: -1}, fields: {temperature: 1, outputTime: 1}, limit: 100});
+    console.log(data.fetch());
+    let mappedData = data.fetch().map((value) => {
+        const time = value.outputTime+3600000
+        return [time, parseInt(value.temperature)];
     }).reverse();
 
     return {
         chart: {
-            type: 'line'
+            zoomType: 'x'
         },
         title: {
-            text: ''
+            text: 'Temperature over time'
+        },
+        subtitle: {
+            text: document.ontouchstart === undefined ?
+                'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
         },
         xAxis: {
-            categories: times
+            type: 'datetime'
         },
         yAxis: {
             title: {
-                text: 'Temperature (°C)'
+                text: 'Temperature'
             }
         },
+        legend: {
+            enabled: false
+        },
         plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.getOptions().colors[0]],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                    ]
                 },
-                enableMouseTracking: false
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                    states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
             }
         },
         series: [{
-            name: `Node ID: ${Session.get('selectedNodeId')}`,
-            data: temps
+            type: 'area',
+            name: 'Temperature in °C ',
+            data: mappedData
         }]
     }
 };

@@ -1,3 +1,7 @@
 .panel {
     background-color: white;
 }
+
+#nodeInfo, #weatherInfo {
+    height: 200px;
+}

@@ -1,9 +1,7 @@
 <template name="pressure">
-    <section class="row">
-        <div class="col s12 panel z-depth-2">
-            <h3>Pressure</h3>
-            <h4 class="flow-text">Current pressure: {{current.pressure}}</h4>
-            <!-- {{> highchartsHelper chartId="pressure" chartWidth="100%" chartHeight="100%" chartObject=pressure}} -->
-        </div>
-    </section>
+    <div class="col l12 m12 s12 panel z-depth-1">
+    <h5>Pressure</h5>
+    <p>Current pressure: {{current.pressure}}</p>
+     {{> highchartsHelper chartId="pressure" chartWidth="100%" chartHeight="400px" chartObject=pressure}}
+</div>
 </template>

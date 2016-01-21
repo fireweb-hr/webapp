@@ -1,20 +1,18 @@
 Template.map.helpers({
-    node: function () {
-        return Nodes.findOne({_id: Session.get('selectedNodeId')});
-    },
     dashboardMapOptions: function () {
         if (GoogleMaps.loaded()) {
             return {
-                center: new google.maps.LatLng(52.7000,4.7000),
-                zoom: 10
+                center: new google.maps.LatLng(51.9164254, 4.4801832),
+                zoom: 10,
+                disableDefaultUI: true,
+                zoomControl: true,
+                mapTypeId: google.maps.MapTypeId.TERRAIN
             };
         }
     }
 });
 
 Template.map.onCreated(function () {
-    this.subscribe('nodes');
-
     GoogleMaps.ready('dashboardMap', () => {
         let nodes = Nodes.find({});
         let markers = [];
@@ -30,7 +28,8 @@ Template.map.onCreated(function () {
             });
 
             options.addListener('click', () => {
-                Session.set('selectedNodeId', id);
+
+                Session.set('selectedNodeId', value._id);
             });
 
             markers.push(options);
