@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06bcdb5b-b3a0-4295-9446-dbd1d1136b78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/nodeInfo/nodeInfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/nodeInfo/nodeInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.scss" afterPath="$PROJECT_DIR$/client/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/pages/dashboardLayout/_dashboard.css" afterPath="$PROJECT_DIR$/client/pages/dashboardLayout/_dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/pages/dashboardLayout/dashboardLayout.html" afterPath="$PROJECT_DIR$/client/pages/dashboardLayout/dashboardLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/humidity/humidity.html" afterPath="$PROJECT_DIR$/client/views/humidity/humidity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/humidity/humidity.js" afterPath="$PROJECT_DIR$/client/views/humidity/humidity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/map/_map.scss" afterPath="$PROJECT_DIR$/client/views/map/_map.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/map/map.html" afterPath="$PROJECT_DIR$/client/views/map/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/map/map.js" afterPath="$PROJECT_DIR$/client/views/map/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/pressure/pressure.html" afterPath="$PROJECT_DIR$/client/views/pressure/pressure.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/pressure/pressure.js" afterPath="$PROJECT_DIR$/client/views/pressure/pressure.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/temperature/temperature.html" afterPath="$PROJECT_DIR$/client/views/temperature/temperature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/temperature/temperature.js" afterPath="$PROJECT_DIR$/client/views/temperature/temperature.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/windSpd/windSpd.html" afterPath="$PROJECT_DIR$/client/views/windSpd/windSpd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/windSpd/windspd.js" afterPath="$PROJECT_DIR$/client/views/windSpd/windspd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/routes.js" afterPath="$PROJECT_DIR$/lib/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publishes.js" afterPath="$PROJECT_DIR$/server/publishes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/startup.js" afterPath="$PROJECT_DIR$/server/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/login/login.html" afterPath="$PROJECT_DIR$/client/views/login/login.html" />
     </list>
     <ignored path="fireweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nodeInfo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nodeInfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/nodeInfo/nodeInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09463722">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_login.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/login/_login.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.03154574">
+              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -95,7 +105,6 @@
         <option value="$PROJECT_DIR$/client/helpers/header.js" />
         <option value="$PROJECT_DIR$/client/views/header/header.html" />
         <option value="$PROJECT_DIR$/client/pages/mainLayout/mainLayout.html" />
-        <option value="$PROJECT_DIR$/client/views/login/login.html" />
         <option value="$PROJECT_DIR$/client/pages/common/_content.scss" />
         <option value="$PROJECT_DIR$/client/pages/loginLayout/loginLayout.html" />
         <option value="$PROJECT_DIR$/client/views/nodeInfo/nodeInfo.js" />
@@ -120,6 +129,7 @@
         <option value="$PROJECT_DIR$/lib/routes.js" />
         <option value="$PROJECT_DIR$/client/pages/dashboardLayout/dashboardLayout.html" />
         <option value="$PROJECT_DIR$/client/views/nodeInfo/nodeInfo.html" />
+        <option value="$PROJECT_DIR$/client/views/login/login.html" />
       </list>
     </option>
   </component>
@@ -129,7 +139,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="838" />
+    <option name="width" value="992" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -253,7 +263,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodeInfo" />
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,11 +290,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/client/views" />
       <recent name="$PROJECT_DIR$/client/pages/dashboardLayout" />
       <recent name="$PROJECT_DIR$/client/views/header" />
       <recent name="$PROJECT_DIR$/client/views/home" />
-      <recent name="$PROJECT_DIR$/client/views/login" />
     </key>
   </component>
   <component name="RunManager">
@@ -348,10 +358,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="838" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="992" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31754032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -379,14 +389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/views/map/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/map/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -563,24 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/login/_login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/pages/common/_content.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6470587">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -773,8 +761,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/nodeInfo/nodeInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09463722">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/login/_login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03154574">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
           <folding />
         </state>
       </provider>

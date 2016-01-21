@@ -6,7 +6,7 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 
 @import "../client/views/map/map";
-@import "../client/views/login/login";
+@import "views/login/login";
 @import "../client/views/header/header";
 @import "../client/pages/common/content";
 @import "{poetic:materialize-scss}/sass/materialize.scss";
