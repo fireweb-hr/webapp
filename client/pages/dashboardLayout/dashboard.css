@@ -1,0 +1,10 @@
+.panel {
+    background-color: white;
+}
+
+.chart {
+    padding: 20px 0 !important;
+}
+.widget {
+    height: 120px;
+}

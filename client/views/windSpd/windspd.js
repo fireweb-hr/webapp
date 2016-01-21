@@ -5,11 +5,14 @@ function degToCompass(num) {
     if(num < 0) num += 360 ;
     if(num >= 360) num -= 360 ;
     let val = Math.round( (num -11.25 ) / 22.5 );
-    let arr = ["N","NNE","NE","ENE","E","EZE", "ZE",
-        "ZZE","Z","ZZW","ZW","WZW","W","WNW","NW","NNW"];
+    let arr = ["N","NNO","NO","ONO","O","OZO", "ZO",
+        "ZZO","Z","ZZW","ZW","WZW","W","WNW","NW","NNW"];
     console.log(arr[ Math.abs(val) ]);
     return arr[ Math.abs(val) ] ;
 }
+Template.windSpd.onCreated(function () {
+    this.subscribe('dataCurrent', Session.get('selectedNodeId'));
+});
 
 Template.windSpd.helpers({
     wind: function () {

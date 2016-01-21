@@ -1,13 +1,6 @@
-Template.temperature.helpers({
-    current() {
-        return SensorData.findOne({}, {sort: {outputTime: -1},
-            fields: {temperature: 1}, limit: 1});
-    }
-});
-
 Template.temperature.temperature = function () {
     let data = SensorData.find({}, {sort: {outputTime: -1}, fields: {temperature: 1, outputTime: 1}, limit: 100});
-    console.log(data.fetch());
+    console.log();
     let mappedData = data.fetch().map((value) => {
         const time = value.outputTime+3600000
         return [time, parseInt(value.temperature)];

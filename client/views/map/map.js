@@ -3,7 +3,7 @@ Template.map.helpers({
         if (GoogleMaps.loaded()) {
             return {
                 center: new google.maps.LatLng(51.9164254, 4.4801832),
-                zoom: 10,
+                zoom: 14,
                 disableDefaultUI: true,
                 zoomControl: true,
                 mapTypeId: google.maps.MapTypeId.TERRAIN

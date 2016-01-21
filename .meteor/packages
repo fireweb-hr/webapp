@@ -22,7 +22,6 @@ iron:router
 email
 orionjs:materialize
 fourseven:scss
-poetic:materialize-scss
 dburles:google-maps
 gwendall:mobile-scroll
 fastclick
@@ -33,7 +32,6 @@ meteorhacks:npm
 npm-container
 meteorhacks:aggregate
 underscore
-chart:chart
 momentjs:moment
 maazalik:highcharts-gauge
 reactive-var
@@ -41,3 +39,4 @@ simple:reactive-method
 
 
 maazalik:highcharts
+materialize:materialize

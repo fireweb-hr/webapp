@@ -1,18 +1,68 @@
 <template name="dashboardLayout">
     {{>header}}
-        <main class="container offset-top">
-            <section class="row">
-                {{>yield 'nodeInfo'}}
-                {{>yield "windSpd"}}
-            </section>
-            <section class="row">
+    <main class="container offset-top">
+        <section class="row">
+            <div class="col l12 m12 s12" id="googleMap">
                 {{>yield 'map'}}
-            </section>
-            <section class="row">
-                {{>yield 'temperature'}}
-                {{>yield 'humidity'}}
-                {{>yield 'pressure'}}
-            </section>
-        </main>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col l4 m12 s12">
+                <div class="col widget l12 m12 s12 panel z-depth-1">
+                    {{>yield 'nodeId'}}
+                </div>
+            </div>
+            <div class="col l4 m12 s12">
+                <div class="col widget l12 m12 s12 panel z-depth-1">
+                    {{>yield 'nodeGeo'}}
+                </div>
+            </div>
+            <div class="col l4 m12 s12">
+                <div class="col widget l12 m12 s12 panel z-depth-1">
+                    {{>yield 'windSpd'}}
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col l4 m12 s12">
+                <div class="col widget l12 m12 s12 panel z-depth-1">
+                    {{>yield 'currentTemperature'}}
+                </div>
+            </div>
+            <div class="col l4 m12 s12">
+                <div class="col widget l12 m12 s12 panel z-depth-1">
+                {{>yield 'currentPressure'}}
+                </div>
+            </div>
+            <div class="col l4 m12 s12">
+                <div class="col widget l12 m12 s12 panel z-depth-1">
+                {{>yield 'currentHumidity'}}
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col l12 m12 s12">
+                <div class="col l12 panel chart z-depth-1">
+                    {{>yield 'temperature'}}
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col l12 m12 s12">
+                <div class="col l12 panel chart z-depth-1">
+                    {{>yield 'humidity'}}
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col l12 m12 s12">
+                <div class="col l12 panel chart z-depth-1">
+                    {{>yield 'pressure'}}
+                </div>
+            </div>
+        </section>
+    </main>
 </template>
+
+
 
