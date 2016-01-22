@@ -1,0 +1,23 @@
+#windSpeed
+{
+	font-size: 15px;
+	float: center;
+	text-align: left;
+}
+
+#windInfo
+{
+	float: left;
+}
+
+h5 
+{
+	color: #fe9600;
+}
+
+#image1{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 5px;
+}
