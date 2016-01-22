@@ -27,14 +27,14 @@ Meteor.startup(() => {
                 });
 
             setInterval(Meteor.bindEnvironment(() => {
-                HTTP.get(`http://api.openweathermap.org/data/2.5/weather?lat=${geo.lat}&lon=${geo.lng}&appid=2de143494c0b295cca9337e1e96b00e0`, (err, output) => {
+                HTTP.get(`http://api.openweathermap.org/data/2.5/weather?lat=${geo.lat}&lon=${geo.lng}&appid=eadc5f93facf9c3cbfe20e3988716115`, (err, output) => {
                     nodeData.wind = output.data.wind;
                     nodeData.outputTime = Date.now();
 
                     console.log(nodeData);
                     SensorData.insert(nodeData);
                 });
-            }), 30000);
+            }), 10000);
         });
     }))
 });

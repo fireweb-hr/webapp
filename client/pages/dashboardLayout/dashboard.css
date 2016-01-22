@@ -8,3 +8,9 @@
 .widget {
     height: 120px;
 }
+
+@media screen and (max-width: 993px) {
+	.infostijl {
+		padding-bottom: 15px !important;
+	}	
+} 
