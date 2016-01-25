@@ -7,7 +7,6 @@ function degToCompass(num) {
     let val = Math.round( (num -11.25 ) / 22.5 );
     let arr = ["N","NNO","NO","ONO","O","OZO", "ZO",
         "ZZO","Z","ZZW","ZW","WZW","W","WNW","NW","NNW"];
-    console.log(arr[ Math.abs(val) ]);
     return arr[ Math.abs(val) ] ;
 }
 Template.windSpd.onCreated(function () {

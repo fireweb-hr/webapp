@@ -20,5 +20,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 #form-ctrl {
   padding: 15px 20px 20px 20px;
   margin-top: 200px;
+}
 
+.input-field .prefix, .input-field .prefix.active {
+  color: midnightblue;
 }

@@ -62,7 +62,7 @@ Template.pressure.pressure = () => {
         },
         series: [{
             type: 'area',
-            name: 'Temperature in Pascals',
+            name: 'Pressure in Pascals',
             data: mappedData
         }]
     }
