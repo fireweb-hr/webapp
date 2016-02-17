@@ -16,11 +16,7 @@ Template.dashboardLayout.onRendered(() => {
             let humidity = SensorData.findOne({}, {sort: {outputTime: -1},
                 fields: {humidity: 1}, limit: 1});
 
-
-            console.log(temperature.temperature);
-
-            if(parseInt(temperature.temperature) > 40 || parseInt(humidity.humidity) < 15) {
-                console.log('er is gevaar hoor');
+            if(parseInt(temperature.temperature) > 40 || parseInt(humidity.humidity) < 10) {
                 Materialize.toast(`Er is brandgevaar gedetecteerd!`, 4000);
             }
         });

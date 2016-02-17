@@ -2,7 +2,7 @@ Template.map.helpers({
     dashboardMapOptions: function () {
         if (GoogleMaps.loaded()) {
             return {
-                center: new google.maps.LatLng(51.9164254, 4.4801832),
+                center: new google.maps.LatLng(51.9175013, 4.4826886),
                 zoom: 14,
                 disableDefaultUI: true,
                 zoomControl: true,

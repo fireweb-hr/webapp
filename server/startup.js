@@ -3,7 +3,7 @@ Meteor.startup(() => {
     spark.login({accessToken: 'b79740fd6a30fc27f3b01fcbd3a044dcc5bfab50'});
     spark.listDevices().then(Meteor.bindEnvironment((devices) => {
         devices.forEach((value) => {
-            const geo = {lat: 51.9164254, lng: 4.4801832}
+            const geo = {lat: 51.9173620, lng: 4.4848130}
             if (Nodes.find({_id: value.id}).count() === 0) {
                 Nodes.insert({
                     _id: value.id,
@@ -31,10 +31,9 @@ Meteor.startup(() => {
                     nodeData.wind = output.data.wind;
                     nodeData.outputTime = Date.now();
 
-                    console.log(nodeData);
                     SensorData.insert(nodeData);
                 });
-            }), 10000);
+            }), 15000);
         });
     }))
 });
